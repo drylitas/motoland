@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="mixbtns">
+        <a href="#" data-filter="all">All</a>
+        <a href="#" data-filter=".category-a">Agrupo A</a>
+        <a href="#" data-filter=".category-b">BgrupoB</a>
+        <a href="#" data-filter="category-c">CgrupoC</a>
+    </div>
+    <div class="featured__content">
+        <div class="mix category-a">AAAAAAA</div>
+        <div class="mix category-b">BBBBBBB</div>
+        <div class="mix category-c" data-order="3">CCCCCCCC</div>
+        <div class="mix category-a category-d" data-order="4">DDDDDDDDDDDc</div>
+    </div>
+
+     
+
+
+
+
+
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+         var config = document.querySelector('.featured__content');
+         var mixer = mixitup(config)
+    </script>
+</body>
+</html>
